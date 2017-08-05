@@ -1,0 +1,63 @@
+
+
+  .avatar1, .avatar2, .avatar3, .avatar4, .avatar5,
+  .avatar6, .avatar7
+  { display: inline-block; background: url('../img/avatars/avatars_min.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+  .avatar1 { background-position: -0px -0px; width: 100px; height: 100px; }
+  .avatar2 { background-position: -100px -0px; width: 100px; height: 100px; }
+  .avatar3 { background-position: -0px -100px; width: 100px; height: 100px; }
+  .avatar4 { background-position: -100px -100px; width: 100px; height: 100px; }
+  .avatar5 { background-position: -0px -200px; width: 100px; height: 100px; }
+  .avatar6 { background-position: -100px -200px; width: 100px; height: 100px; }
+  .avatar7 { background-position: -0px -300px; width: 100px; height: 100px; }
+
+.avatar1 {
+  border-radius: 50%;
+  float: right;
+  margin-left: 1rem;
+  padding-top: 10%;
+  zoom: 50%;
+}
+
+.avatar2, .avatar3, .avatar4,
+.avatar5, .avatar6, .avatar7 {
+  border-radius: 50%;
+  float: left;
+  margin-right: 1rem;
+  zoom: 50%;
+}
+.aavatar {
+  margin-top: 15px;
+  float: left;
+  margin-right: 1rem;
+  zoom: 60%;
+}
+
+
+/**************************************
+          MAIN PHOTOS
+***************************************/
+
+
+.photo1, .photo2, .photo3, .photo4, .photo5,
+.photo6, .photo7, .photo8, .photo9
+{ display: inline-block; background: url('../img/photos/download.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: center; }
+
+.photo1 { background-position: -0px -0px; width: 1000px; height: 667px; }
+.photo2 { background-position: -1000px -0px; width: 1000px; height: 667px; }
+.photo3 { background-position: -2000px -0px; width: 1000px; height: 604px; }
+.photo4 { background-position: -2000px -604px; width: 1000px; height: 675px; }
+.photo5 { background-position: -0px -667px; width: 1000px; height: 667px; }
+.photo6 { background-position: -1000px -667px; width: 1000px; height: 668px; }
+.photo7 { background-position: -2000px -1279px; width: 1000px; height: 750px; }
+.photo8 { background-position: -0px -1334px; width: 1000px; height: 1000px; }
+.photo9 { background-position: -1000px -1335px; width: 1000px; height: 667px; }
+
+.photo1, .photo2, .photo3, .photo4, .photo5,
+.photo6, .photo7, .photo8, .photo9 {
+   background-size: auto; 
+}
+.row img {
+  width: 100%;
+}
