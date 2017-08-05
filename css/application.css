@@ -11657,7 +11657,8 @@ th {
 .photo7,
 .photo8,
 .photo9 {
-  background-size: auto;
+  width: 100%;
+  zoom: 70%;
 }
 
 .row img {
