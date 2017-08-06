@@ -5,17 +5,7 @@ var gulp = require('gulp'),
     maps = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    gzip = require('gulp-gzip'),
-    clean = require('gulp-clean'),
-    spritesmith = require('gulp.spritesmith');
-
-gulp.task('sprite', function () {
-  var spriteData = gulp.src('img/photos/*.png').pipe(spritesmith({
-    imgName: 'sprite.png',
-    cssName: 'sprite.css'
-  }));
-  return spriteData.pipe(gulp.dest('img/sprite'));
-});
+    clean = require('gulp-clean');
 
 gulp.task('concatcss', function () {
   return gulp.src('css/*.css')

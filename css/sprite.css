@@ -54,10 +54,10 @@
 .photo8 { background-position: -0px -1334px; width: 1000px; height: 1000px; }
 .photo9 { background-position: -1000px -1335px; width: 1000px; height: 667px; }
 
+
 .photo1, .photo2, .photo3, .photo4, .photo5,
 .photo6, .photo7, .photo8, .photo9 {
-   width: 100%;
-   zoom: 70%;
+    width: 100%;
 }
 .row img {
   width: 100%;
