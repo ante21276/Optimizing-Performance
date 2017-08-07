@@ -2,7 +2,7 @@
 
   .avatar1, .avatar2, .avatar3, .avatar4, .avatar5,
   .avatar6, .avatar7
-  { display: inline-block; background: url('../img/avatars/avatars_min.png') no-repeat;}
+  { background: url('../img/avatars/avatars_min.png') no-repeat;}
 
   .avatar1 { background-position: -0px -0px; width: 100px; height: 100px; }
   .avatar2 { background-position: -100px -0px; width: 100px; height: 100px; }
@@ -16,22 +16,19 @@
   border-radius: 50%;
   float: right;
   margin-left: 1rem;
-  padding-top: 10%;
-
+  transform: scale(0.5, 0.5);
+  margin-top: -25px;
+  margin-left: -15px;
 }
 
 .avatar2, .avatar3, .avatar4,
 .avatar5, .avatar6, .avatar7 {
   border-radius: 50%;
   float: left;
-  margin-right: 1rem;
+  transform: scale(0.5, 0.5);
+  margin: -25px 1rem -25px -25px;
 }
-.aavatar {
-  margin-top: 15px;
-  float: left;
-  margin-right: 1rem;
 
-}
 
 
 /**************************************

@@ -11394,8 +11394,14 @@ th {
 .image-grid .image a {
   border-radius: .5rem .5rem 0 0;
   display: block;
-  min-width: 100%;
+  width: 100%;
   overflow: hidden;
+}
+
+.info a {
+  height: auto;
+  min-height: 100%;
+  position: relative;
 }
 
 .image-grid .image .info {
@@ -11404,13 +11410,9 @@ th {
   border-bottom-color: rgb(123, 136, 149);
   border-radius: 0 0 .5rem .5rem;
   padding: 1rem;
-  position: relative;
-  overflow: auto;
-}
-
-.info a {
-  overflow: hidden;
-  height: 100%;
+  /*position: relative;
+    overflow:auto;*/
+  object-fit: contain;
 }
 
 .image-grid .image .info .attribution {
@@ -11438,7 +11440,6 @@ th {
 .avatar5,
 .avatar6,
 .avatar7 {
-  display: inline-block;
   background: url("../img/avatars/avatars_min.png") no-repeat;
 }
 
@@ -11488,7 +11489,9 @@ th {
   border-radius: 50%;
   float: right;
   margin-left: 1rem;
-  padding-top: 10%;
+  transform: scale(0.5, 0.5);
+  margin-top: -25px;
+  margin-left: -15px;
 }
 
 .avatar2,
@@ -11499,13 +11502,8 @@ th {
 .avatar7 {
   border-radius: 50%;
   float: left;
-  margin-right: 1rem;
-}
-
-.aavatar {
-  margin-top: 15px;
-  float: left;
-  margin-right: 1rem;
+  transform: scale(0.5, 0.5);
+  margin: -25px 1rem -25px -25px;
 }
 
 /**************************************

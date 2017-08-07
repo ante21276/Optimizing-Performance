@@ -5,7 +5,8 @@ var gulp = require('gulp'),
     maps = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    clean = require('gulp-clean');
+    clean = require('gulp-clean'),
+    inlineCss = require('gulp-inline-css');
 
 gulp.task('concatcss', function () {
   return gulp.src('css/*.css')

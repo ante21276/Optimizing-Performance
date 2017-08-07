@@ -19,8 +19,13 @@
 .image-grid .image a {
     border-radius: .5rem .5rem 0 0;
     display: block;
-    min-width: 100%;
+    width: 100%;
     overflow: hidden;
+}
+.info a {
+  height: auto;
+  min-height: 100%;
+  position: relative;
 }
 .image-grid .image .info {
     background-color: #fff;
@@ -28,13 +33,11 @@
     border-bottom-color: rgb(123, 136, 149);
     border-radius: 0 0 .5rem .5rem;
     padding: 1rem;
-    position: relative;
-    overflow:auto;
+    /*position: relative;
+    overflow:auto;*/
+    object-fit: contain;
 }
-.info a {
-  overflow: hidden;
-  height: 100%;
-}
+
 .image-grid .image .info .attribution {
     color: rgb(73, 85, 96);
     font-family: "Ubuntu";
