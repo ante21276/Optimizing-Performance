@@ -2,7 +2,7 @@
 
   .avatar1, .avatar2, .avatar3, .avatar4, .avatar5,
   .avatar6, .avatar7
-  { display: inline-block; background: url('../img/avatars/avatars_min.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+  { display: inline-block; background: url('../img/avatars/avatars_min.png') no-repeat;}
 
   .avatar1 { background-position: -0px -0px; width: 100px; height: 100px; }
   .avatar2 { background-position: -100px -0px; width: 100px; height: 100px; }
@@ -17,7 +17,7 @@
   float: right;
   margin-left: 1rem;
   padding-top: 10%;
-  zoom: 50%;
+
 }
 
 .avatar2, .avatar3, .avatar4,
@@ -25,13 +25,12 @@
   border-radius: 50%;
   float: left;
   margin-right: 1rem;
-  zoom: 50%;
 }
 .aavatar {
   margin-top: 15px;
   float: left;
   margin-right: 1rem;
-  zoom: 60%;
+
 }
 
 
@@ -57,8 +56,12 @@
 
 .photo1, .photo2, .photo3, .photo4, .photo5,
 .photo6, .photo7, .photo8, .photo9 {
-    width: 100%;
+
 }
 .row img {
   width: 100%;
+}
+
+.reveal-modal {
+  display: none;
 }

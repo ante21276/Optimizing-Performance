@@ -2734,17 +2734,6 @@ meta.foundation-mq-topbar {
   box-shadow: 0 0 0 1px #888888, 0 7px 0 1px #888888, 0 14px 0 1px #888888;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  .top-bar.expanded .top-bar-section .has-dropdown.moved > .dropdown,
-  .top-bar.expanded .top-bar-section .dropdown {
-    clip: initial;
-  }
-
-  .top-bar.expanded .top-bar-section .has-dropdown:not(.moved) > ul {
-    padding: 0;
-  }
-}
-
 .top-bar-section {
   left: 0;
   position: relative;
@@ -4553,18 +4542,6 @@ button.dropdown.secondary:after {
   text-align: center;
 }
 
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
@@ -5058,17 +5035,6 @@ button.dropdown.secondary:after {
   color: #FFFFFF;
 }
 
-.icon-bar .item.disabled {
-  cursor: not-allowed;
-  opacity: 0.7;
-  pointer-events: none;
-}
-
-.icon-bar .item.disabled > * {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
 .icon-bar.two-up .item {
   width: 50%;
 }
@@ -5530,7 +5496,6 @@ ul.pagination li.unavailable a,
 ul.pagination li.unavailable button {
   cursor: default;
   color: #999999;
-  pointer-events: none;
 }
 
 ul.pagination li.unavailable:hover a,
@@ -5918,15 +5883,6 @@ a img {
 
 /* Default paragraph styles */
 
-p {
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.6;
-  margin-bottom: 1.25rem;
-  text-rendering: optimizeLegibility;
-}
-
 p.lead {
   font-size: 1.21875rem;
   line-height: 1.6;
@@ -5953,7 +5909,6 @@ h6 {
   line-height: 1.4;
   margin-bottom: 0.5rem;
   margin-top: 0.2rem;
-  text-rendering: optimizeLegibility;
 }
 
 h1 small,
@@ -6284,10 +6239,6 @@ blockquote p {
   img {
     max-width: 100% !important;
   }
-
-@page {
-    margin: 0.34in;
-}
 
   p,
   h2,
@@ -6653,7 +6604,6 @@ blockquote p {
   border-color: transparent transparent #333333 transparent;
   display: block;
   height: 0;
-  pointer-events: none;
   position: absolute;
   top: -10px;
   width: 0;
@@ -8586,7 +8536,6 @@ table tr td {
   margin: 1.25rem 0;
   position: relative;
   -ms-touch-action: none;
-  touch-action: none;
   display: block;
   height: 1rem;
   width: 100%;
@@ -8598,7 +8547,6 @@ table tr td {
   margin: 1.25rem 0;
   position: relative;
   -ms-touch-action: none;
-  touch-action: none;
   display: inline-block;
   height: 12.5rem;
   width: 1rem;
@@ -8686,7 +8634,6 @@ table tr td {
   width: 2rem;
   z-index: 1;
   -ms-touch-action: manipulation;
-  touch-action: manipulation;
   background: #008CBA;
 }
 
@@ -9231,18 +9178,6 @@ kbd {
   margin: 0;
   padding: 0.125rem 0.25rem 0;
   border-radius: 3px;
-}
-
-.switch {
-  border: none;
-  margin-bottom: 1.5rem;
-  outline: 0;
-  padding: 0;
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .switch label {
@@ -11458,8 +11393,6 @@ th {
 
 .image-grid .image a {
   border-radius: .5rem .5rem 0 0;
-  /* max-height: 15rem; */
-  /* min-height: 15rem; */
   display: block;
   min-width: 100%;
   overflow: hidden;
@@ -11471,6 +11404,13 @@ th {
   border-bottom-color: rgb(123, 136, 149);
   border-radius: 0 0 .5rem .5rem;
   padding: 1rem;
+  position: relative;
+  overflow: auto;
+}
+
+.info a {
+  overflow: hidden;
+  height: 100%;
 }
 
 .image-grid .image .info .attribution {
@@ -11500,9 +11440,6 @@ th {
 .avatar7 {
   display: inline-block;
   background: url("../img/avatars/avatars_min.png") no-repeat;
-  overflow: hidden;
-  text-indent: -9999px;
-  text-align: left;
 }
 
 .avatar1 {
@@ -11552,7 +11489,6 @@ th {
   float: right;
   margin-left: 1rem;
   padding-top: 10%;
-  zoom: 50%;
 }
 
 .avatar2,
@@ -11564,14 +11500,12 @@ th {
   border-radius: 50%;
   float: left;
   margin-right: 1rem;
-  zoom: 50%;
 }
 
 .aavatar {
   margin-top: 15px;
   float: left;
   margin-right: 1rem;
-  zoom: 60%;
 }
 
 /**************************************
@@ -11648,18 +11582,12 @@ th {
   height: 667px;
 }
 
-.photo1,
-.photo2,
-.photo3,
-.photo4,
-.photo5,
-.photo6,
-.photo7,
-.photo8,
-.photo9 {
-  width: 100%;
-}
+
 
 .row img {
   width: 100%;
+}
+
+.reveal-modal {
+  display: none;
 }
