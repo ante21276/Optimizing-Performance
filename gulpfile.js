@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     clean = require('gulp-clean'),
-    inlineCss = require('gulp-inline-css');
+    inlinesource = require('gulp-inline-source');
 
 gulp.task('concatcss', function () {
   return gulp.src('css/*.css')
@@ -21,6 +21,12 @@ gulp.task('minify-css', ["concatcss"], () => {
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rename("application.min.css"))
     .pipe(gulp.dest('css'));
+});
+
+gulp.task('inlinesource', ["minify-css"], function () {
+    return gulp.src('*.html')
+        .pipe(inlinesource())
+        .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('concatScripts', function() {
@@ -48,8 +54,8 @@ gulp.task('removeDist', function () {
         .pipe(clean());
 });
 
-gulp.task("build", ["minify-css", "minify-js"], () => {
-  return gulp.src(["css/application.min.css", "js/app.min.js","index.html", "img/**"], {base:"./"})
+gulp.task("build", ["minify-css", "minify-js", "inlinesource"], () => {
+  return gulp.src(["css/application.min.css", "js/app.min.js","img/**"], {base:"./"})
             .pipe(gulp.dest("dist"));
 });
 
